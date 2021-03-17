@@ -13,7 +13,7 @@ I wanted to automate building and rebuilding (with adjustments) my development e
 Initially I used the following shell commands to  
 build the image (Note that you can first edit the AWS conguration in .aws folder, as well as .bashrc file.)
 ```
-docker build -t local/dev-image .
+docker build --no-cache -t local/dev-image .
 ```
 build and start the container (Note that you need to replace \<folder that contains your project folders\> with the path on your host system that you want to mount to /workspaces/projects in the container.)
 ```
